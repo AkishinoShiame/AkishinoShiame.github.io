@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>  
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="flags/favicon-terminal.ico" sizes="16x16">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -9,108 +9,72 @@
         <link rel="stylesheet" href="css/bootstrap-social.css">
         <link rel="stylesheet" href="css/flag-icon.css">
         <title>ようこそ秋っちのせかいへ (=ﾟωﾟ)ﾉ</title>
+        <style type="text/css">
+            /* -- bg pic in body, this pg only -- */
+            body { 
+                background: url("content/Index_BG-conoha-2560_1440.jpg") no-repeat center center fixed !important; 
+                background-size: cover !important;
+            }
+            
+            /* -- full hight for container-fluid, overwrite this pg only -- */
+            
+            .container-fluid {
+                height:100vh !important;
+            }
+
+            .bg-light{
+                background-color: #f8f9faCF !important;
+            }
+
+            .row{
+                padding-top: 35vh !important;
+            }
+
+            .bg-gray-dark{
+                background-color: var(--gray-dark) !important;
+            }
+        </style>
     </head>
-    <!-- change body bg color
-    <style type="text/css">
-        body { background: var(--pink) !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-     </style>
-     -->
     <body>
-        <!-- main frame-->
-        <div class="container-fluid">
-            <div class="row container-fluid">
-                <div class="col">
-                    <h1>～秋篠詩雨の空間・クリエイターの世界へようこそ～</h1>
-                </div>
-                <div class="col-md-auto">
-                    <div class="bg-light">
-                        <h3><span class="align-middle flag-icon flag-icon-jp"></span></h3>
-                        <h6><small class="align-text-bottom">日本語</small></h6>
-                    </div>
-                </div>
-                <div class="col-md-auto">
-                    <div class="bg-light">
-                        <h3><span class="align-middle flag-icon flag-icon-tw"></span></h3>
-                        <h6><small class="align-text-bottom">繁體中文</small></h6>
-                    </div>
-                </div>
-                <div class="col-md-auto">
-                    <div class="bg-light">
-                        <h3><span class="align-middle flag-icon flag-icon-us"></span></h3>
-                        <h6><small>English</small></h6>
-                    </div>
-                </div>
-            </div>
-            <!-- First layer for width double-->
-            <div class="row">
-                <div class="col-9">
-                    <div class="container-fluid">
-                        <!-- <h2>~RAW Selection Bar~</h2> -->
-                        <nav class="navbar navbar-light bg-light">
-                            <form class="form-inline">
-                                <a class="navbar-brand" href="#">Road Map</a>
-                                &nbsp;&nbsp;
-                                <button class="btn btn-outline-success" type="button">&nbsp;&nbsp;Sel 1&nbsp;&nbsp;</button>
-                                &nbsp;&nbsp;
-                                <button class="btn btn-outline-success" type="button">&nbsp;&nbsp;Sel 2&nbsp;&nbsp;</button>
-                                &nbsp;&nbsp;
-                                <button class="btn btn-outline-success" type="button">&nbsp;&nbsp;Sel 3&nbsp;&nbsp;</button>
-                                &nbsp;&nbsp;
-                            </form>
-                        </nav>
-                    </div>
-                    <div class="container-fluid">
-                        <h4>Content</h4>
-                        <p>
-                            Bang! <br \>
-                            こんにちは <br \>
-                            ちょっと <br \>
-                            眠くなる <br \>
-                            お疲れ様 <br \>
-                            大変 <br \>
-                            テスト <br \>
-                            ノーマル <br \>
-                            Bang! <br \>
-                            こんにちは <br \>
-                            ちょっと <br \>
-                            眠くなる <br \>
-                            お疲れ様 <br \>
-                            大変 <br \>
-                            テスト <br \>
-                            ノーマル <br \>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="container-fluid">
-                        <!-- <h2>LOGO & ICON</h2> -->
-                        <h2>LOGO</h2>
-                        <img src="content/temp.gif" class="rounded img-thumbnail">
-                        <div class="row align-items-end justify-content-md-center">
-                            <div class="bg-light py-3">
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                <a class="btn btn-social-icon btn-facebook" href="#"><span class="fa fa-facebook"></span></a>
-                                &nbsp;&nbsp;
-                                <a class="btn btn-social-icon btn-github" href="#"><span class="fa fa-github"></span></a>
-                                &nbsp;&nbsp;
-                                <a class="btn btn-social-icon btn-google" href="#"><span class="fa fa-google"></span></a>
-                                &nbsp;&nbsp;
-                                <a class="btn btn-social-icon btn-linkedin" href="#"><span class="fa fa-linkedin"></span></a>
-                                &nbsp;&nbsp;
-                                <a class="btn btn-social-icon btn-twitter" href="#"><span class="fa fa-twitter"></span></a>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="container-fluid bg-light">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto bg-white">
+                    <br>
+                    <h1>&nbsp;～秋篠詩雨の空間・クリエイターの世界へようこそ～&nbsp;</h1>
+                    <p class="lead">
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ご好きな言語で選んでください。</h2>
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please Select your favorite Language.</h2>
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;請選擇您想觀看的語言。</h2>
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-2 text-center">
+                            <div class="bg-gray-dark rounded img-thumbnail">
+                                <a href="index-jp.html">
+                                    <h3><span class="align-middle flag-icon flag-icon-jp"></span></h3>
+                                    <h6><small class="align-text-bottom">日本語</small></h6>
+                                </a>
+                            </div>
+                        </div>
+                        &nbsp;&nbsp;
+                        <div class="col-2 text-center">
+                            <div class="bg-gray-dark rounded img-thumbnail">
+                                <a href="index-tw.html">
+                                    <h3><span class="align-middle flag-icon flag-icon-tw"></span></h3>
+                                    <h6><small class="align-text-bottom">繁體中文</small></h6>
+                                </a>
+                            </div>
+                        </div>
+                        &nbsp;&nbsp;
+                        <div class="col-2 text-center">
+                            <div class="bg-gray-dark rounded img-thumbnail">
+                                <a href="index-en.html">
+                                    <h3><span class="align-middle flag-icon flag-icon-us"></span></h3>
+                                    <h6><small>English</small></h6>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <h3>Profile & self intro</h3>
-                    </div>
-                </div>
-            </div>
-            <!-- Footer -->
-            <div class="row align-items-end justify-content-md-center">
-                <div class="col-md-auto">
-                    <footer class="footer">&copy;2019 AkishinoShiame</footer>
+                    <br><br>
                 </div>
             </div>
         </div>

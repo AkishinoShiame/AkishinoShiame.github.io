@@ -23,6 +23,12 @@
             .bg-dark{
                 background-color: #343a40AB !important;
             }
+
+            .scrollspy-custom{
+                max-height: 80vh !important;
+                height: 80vh !important;
+                overflow:hidden !important;
+            }
             </style>
         </head>
     <body>
@@ -53,7 +59,7 @@
                     <br><br>
                     <div class="container-fluid">
                         <!-- left down content shows below -->
-                        <div data-spy="scroll" data-target="#navbar-main-control" data-offset="0">
+                        <div data-spy="scroll" data-target="#navbar-main-control" data-offset="100" class="scrollspy-custom bg-light">
                             <h4>Content</h4>
                             <p>
                                 Bang! <br \>

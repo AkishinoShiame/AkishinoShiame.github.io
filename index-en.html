@@ -45,6 +45,17 @@
                 max-height: 97vh !important;
                 overflow: auto;
             }
+
+            ::-webkit-scrollbar {
+                width: 7px;  /* remove scrollbar space */
+                background: transparent;  /* optional: just make scrollbar invisible */
+            }
+
+            /* optional: show position indicator in red */
+            ::-webkit-scrollbar-thumb {
+                background: #e83e8cAB !important;
+                border-radius: 5px;
+            }        
         </style>
     </head>
     
@@ -196,12 +207,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 side-bar-custom">
+                <br><br>
+                <div class="col-3 side-bar-custom"> <!-- mCustomScrollbar" data-mcs-theme="minimal-dark" data-mcs-auto-hide-scrollbar="true">-->
                     <div class="container-fluid">
                         <!-- <h2>LOGO & ICON</h2> -->
                         <br>
                         <img src="content/temp.gif" class="rounded img-thumbnail">
-                        <br><br>
                         <div class="row align-items-end justify-content-md-center">
                             <div class="bg-light py-3">
                                 &nbsp;&nbsp;&nbsp;&nbsp;

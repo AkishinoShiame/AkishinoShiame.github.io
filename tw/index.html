@@ -21,12 +21,6 @@
                 border-bottom: dashed !important;
             }
 
-            /* below canvas test*/
-            canvas {
-                width: 50vh;
-                height: 50vh;
-            }
-
             .bg-light{
                 background-color: #f8f9faAB !important;
             }
@@ -192,7 +186,9 @@
                                                 ~~~~~~~~~~~~~~~~~~~~~~~~ここ以降は臨時コンテンツ~~~~~~~~~~~~~~~~~~~~~~~~ <br \>
                                                 特殊かも <br>
                                                 <!-- Test block -->
-                                                <canvas id="myChart" width="200" height="200"></canvas>
+                                                <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                                                    <canvas id="myChart"></canvas>
+                                                </div>
                                                 <!-- Test block end-->
                                                 ~~~~~~~~~~~~~~~~~~~~~~~~ここ以前は臨時コンテンツ~~~~~~~~~~~~~~~~~~~~~~~~ <br \>
                                             </p>

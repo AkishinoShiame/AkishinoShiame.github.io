@@ -767,9 +767,17 @@
                     }]
                 },
                 options: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Test Chart'
+                    },
                     scale: {
-                        // Hides the scale
-                        display: false
+                        ticks: {
+                            beginAtZero: true
+                        }
                     }
                 }
             });

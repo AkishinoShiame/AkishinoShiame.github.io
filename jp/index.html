@@ -58,6 +58,12 @@
                 font-family: fontForBg !important;
             }
 
+            .hvh-32{
+                height: 324vh !important ;
+                max-height: 32vh !important ;
+                min-height: 32vh !important ;
+            }
+
             .hvh-34{
                 height: 34vh !important ;
                 max-height: 34vh !important ;
@@ -278,35 +284,25 @@
                                         <div class="carousel-item">
                                             <h4>知識領域の探索</h4>
                                             <div class=row>
-                                                <div class="col-6 d-block hvh-34">
-                                                    <!-- Test block -->
-                                                    <div class="chart-container bg-light hvh-34" style="position: relative;">
-                                                        <canvas id="myChart"></canvas>
+                                                <div class="col-7 d-block hvh-34">
+                                                    <!-- Chart-1/3 -->
+                                                    <div class="chart-container bg-light hvh-32 rounded">
+                                                        <canvas id="myKnowledgeChart" class="hvh-32 w-100"></canvas>
                                                     </div>
-                                                    <!-- Test block end-->
                                                 </div>
-                                                <div class="col-6 d-block hvh-34">
-                                                    <!-- Test block -->
-                                                    <div class="chart-container bg-light" style="position: relative;">
-                                                        <canvas id="myChart"></canvas>
+                                                <div class="col-5 d-block hvh-34">
+                                                    <!-- Chart-2/3 -->
+                                                    <div class="chart-container bg-light hvh-32 rounded">
+                                                        <canvas id="myKnowledgeChart2" class="hvh-32 w-100"></canvas>
                                                     </div>
-                                                    <!-- Test block end-->
                                                 </div>
                                             </div>
                                             <div class=row>
-                                                <div class="col-6 d-block hvh-34">
-                                                    <!-- Test block -->
-                                                    <div class="chart-container bg-light" style="position: relative;">
-                                                        <canvas id="myChart"></canvas>
+                                                <div class="col-12 d-block hvh-34">
+                                                    <!-- Chart-2/3 -->
+                                                    <div class="chart-container bg-light hvh-32 rounded">
+                                                        <canvas id="myKnowledgeChart3" class="hvh-32 w-100"></canvas>
                                                     </div>
-                                                    <!-- Test block end-->
-                                                </div>
-                                                <div class="col-6 d-block hvh-34">
-                                                    <!-- Test block -->
-                                                    <div class="chart-container bg-light" style="position: relative;">
-                                                        <canvas id="myChart"></canvas>
-                                                    </div>
-                                                    <!-- Test block end-->
                                                 </div>
                                             </div>
                                         </div>
@@ -841,24 +837,27 @@
                 $('[data-toggle="tooltip"]').tooltip({ boundary: 'window', placement:'bottom' })
             })
         </script>
-        <!-- Test -->
+        <!-- Graph -->
         <script>
-            var ctx = document.getElementById('myChart').getContext('2d');
+            var Kctx = document.getElementById('myKnowledgeChart').getContext('2d');
+            var Kctx2 = document.getElementById('myKnowledgeChart2').getContext('2d');
+            var Kctx3 = document.getElementById('myKnowledgeChart3').getContext('2d');
             new Chart(document.getElementById("myRadarChart"),{"type":"radar","data":{"labels":["Eating","Drinking","Sleeping","Designing","Coding","Cycling","Running"],"datasets":[{"label":"My First Dataset","data":[65,59,90,81,56,55,40],"fill":true,"backgroundColor":"rgba(255, 99, 132, 0.2)","borderColor":"rgb(255, 99, 132)","pointBackgroundColor":"rgb(255, 99, 132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"},{"label":"My Second Dataset","data":[28,48,40,19,96,27,100],"fill":true,"backgroundColor":"rgba(54, 162, 235, 0.2)","borderColor":"rgb(54, 162, 235)","pointBackgroundColor":"rgb(54, 162, 235)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(54, 162, 235)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-            var myChart = new Chart(ctx, {
-                type: 'bar',
+            var myKnowledgeChart = new Chart(Kctx, {
+                type: 'horizontalBar',
+                fontSize: 20,
                 data: {
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    labels: ['ShellScript', 'C#', 'Python', 'C', 'C++', 'Java' ],
                     datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
+                        label: '# 年の使用時間',
+                        data: [4.5, 3, 3, 1.5, 1, 1],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(255, 206, 86, 0.5)',
+                            'rgba(75, 192, 192, 0.5)',
+                            'rgba(153, 102, 255, 0.5)',
+                            'rgba(255, 159, 64, 0.5)'
                         ],
                         borderColor: [
                             'rgba(255, 99, 132, 1)',
@@ -872,16 +871,136 @@
                     }]
                 },
                 options: {
+                    responsive: true,
+                    legend: {
+                        labels: {
+                            fontSize: 25,
+                        }
+                    },
+                    tooltips: {
+                        titleFontSize: 25,
+                        bodyFontSize: 25,
+                        footerFontSize: 25,
+                        caretSize: 25
+                    },
                     scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontSize: 25,
+                                beginAtZero: true
+                            }
+                        }],
                         yAxes: [{
                             ticks: {
-                                beginAtZero: true
+                                fontSize: 25
+                            }
+                        }]
+                    }
+                }
+            });
+            var myKnowledgeChart2 = new Chart(Kctx2, {
+                type: 'pie',
+                data: {
+                    labels: ['日本語', '英語', '台湾語', '中国語'],
+                    datasets: [{
+                        label: '% 普段の使用率',
+                        data: [20, 40, 10, 30],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.5)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(255, 206, 86, 0.5)',
+                            'rgba(75, 192, 192, 0.5)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    tooltips: {
+                        titleFontSize: 25,
+                        bodyFontSize: 25,
+                        footerFontSize: 25,
+                        caretSize: 25
+                    },
+                    legend: {
+                        labels: {
+                            fontSize: 25,
+                        }
+                    }
+                }
+            });
+            var myKnowledgeChart3 = new Chart(Kctx3, {
+                type: 'bar',
+                data: {
+                    labels: ['Linux', 'Cisco Switch', 'MAchine Learn', 'Setup', '4', '5', '6'],
+                    datasets: [{
+                        label: '# 経験度',
+                        data: [1, 2, 3, 1, 3, 2, 2],
+                        backgroundColor: [
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(255, 159, 64, 0.2)",
+                        "rgba(255, 205, 86, 0.2)",
+                        "rgba(75, 192, 192, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(153, 102, 255, 0.2)",
+                        "rgba(201, 203, 207, 0.2)"
+                        ],
+                        borderColor: [
+                        "rgb(255, 99, 132)",
+                        "rgb(255, 159, 64)",
+                        "rgb(255, 205, 86)",
+                        "rgb(75, 192, 192)",
+                        "rgb(54, 162, 235)",
+                        "rgb(153, 102, 255)",
+                        "rgb(201, 203, 207)"
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: {
+                        labels: {
+                            fontSize: 30,
+                        }
+                    },
+                    tooltips: {
+                        titleFontSize: 30,
+                        bodyFontSize: 30,
+                        footerFontSize: 30,
+                        caretSize: 30
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                fontSize: 30
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                fontSize: 30,
+                                beginAtZero: true,
+                                min: 0,
+                                max: 3,
+                                stepSize: 1,
+                                callback: function(value, index, values) {
+                                    if (value == 1){ return '学校勉強'; }
+                                    else if (value == 2){ return '作品あり'; }
+                                    else if (value == 3){ return '実際応用'; }
+                                    else { return ''; }
+                                }
                             }
                         }]
                     }
                 }
             });
         </script>
-        <!-- est block end-->
+        <!-- Graph block end-->
     </body>
 </html>

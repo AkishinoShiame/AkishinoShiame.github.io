@@ -844,7 +844,8 @@
         <!-- Test -->
         <script>
             var ctx = document.getElementById('myChart').getContext('2d');
-            var ctx2 = document.getElementById('myRadarChart').getContext('2d');
+            new Chart(
+                document.getElementById("cmyRadarChart"),{"type":"radar","data":{"labels":["Eating","Drinking","Sleeping","Designing","Coding","Cycling","Running"],"datasets":[{"label":"My First Dataset","data":[65,59,90,81,56,55,40],"fill":true,"backgroundColor":"rgba(255, 99, 132, 0.2)","borderColor":"rgb(255, 99, 132)","pointBackgroundColor":"rgb(255, 99, 132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"},{"label":"My Second Dataset","data":[28,48,40,19,96,27,100],"fill":true,"backgroundColor":"rgba(54, 162, 235, 0.2)","borderColor":"rgb(54, 162, 235)","pointBackgroundColor":"rgb(54, 162, 235)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(54, 162, 235)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -878,33 +879,6 @@
                                 beginAtZero: true
                             }
                         }]
-                    }
-                }
-            });
-            var myRadarChart = new Chart(ctx2, {
-                type: 'radar',
-                data: {
-                    label: 'My First dataset',
-                    backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-					borderColor: window.chartColors.red,
-					pointBackgroundColor: window.chartColors.red,
-                    labels: ['Running', 'Swimming', 'Eating', 'Cycling'],
-                    datasets: [{
-                        data: [20, 10, 4, 2]
-                    }]
-                },
-                options: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Test Chart'
-                    },
-                    scale: {
-                        ticks: {
-                            beginAtZero: true
-                        }
                     }
                 }
             });

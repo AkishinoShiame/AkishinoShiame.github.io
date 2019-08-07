@@ -833,7 +833,6 @@
                 data: {
                     labels: ['English', 'Chinese(TW)', 'Japanese', 'Taiwanese'],
                     datasets: [{
-                        label: '% 普段の使用率',
                         data: [40, 30, 20, 10],
                         backgroundColor: [
                             'rgba(54, 162, 235, 0.5)',
@@ -852,6 +851,11 @@
                 },
                 options: {
                     responsive: true,
+                    title: {
+                        display: true,
+                        fontSize: 24,
+                        text: '% Normal Usage Rate'
+                    },
                     tooltips: {
                         titleFontSize: 25,
                         bodyFontSize: 25,
@@ -860,7 +864,7 @@
                     },
                     legend: {
                         labels: {
-                            fontSize: 23,
+                            fontSize: 20,
                         }
                     }
                 }

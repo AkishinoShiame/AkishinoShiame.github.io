@@ -903,7 +903,6 @@
                 data: {
                     labels: ['英語', '中国語', '日本語', '台湾語'],
                     datasets: [{
-                        label: '% 普段の使用率',
                         data: [40, 30, 20, 10],
                         backgroundColor: [
                             'rgba(54, 162, 235, 0.5)',
@@ -922,6 +921,11 @@
                 },
                 options: {
                     responsive: true,
+                    title: {
+                        display: true,
+                        fontSize: 24,
+                        text: '% 普段の使用率'
+                    },
                     tooltips: {
                         titleFontSize: 25,
                         bodyFontSize: 25,

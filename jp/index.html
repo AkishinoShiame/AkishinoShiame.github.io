@@ -991,12 +991,13 @@
                                 fontSize: 30,
                                 beginAtZero: true,
                                 min: 0,
-                                max: 3,
+                                max: 4,
                                 stepSize: 1,
                                 callback: function(value, index, values) {
-                                    if (value == 1){ return '学校勉強'; }
+                                    if (value == 1){ return '知識あり'; }
                                     else if (value == 2){ return '作品あり'; }
-                                    else if (value == 3){ return '実際応用'; }
+                                    else if (value == 3){ return '実務経験あり'; }
+                                    else if (value == 4){ return '実務経験1年以上'; }
                                     else { return ''; }
                                 }
                             }

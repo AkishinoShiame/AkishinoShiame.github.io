@@ -921,12 +921,13 @@
                                 fontSize: 30,
                                 beginAtZero: true,
                                 min: 0,
-                                max: 3,
+                                max: 4,
                                 stepSize: 1,
                                 callback: function(value, index, values) {
-                                    if (value == 1){ return 'From School'; }
+                                    if (value == 1){ return 'Learned'; }
                                     else if (value == 2){ return 'Has Project'; }
-                                    else if (value == 3){ return 'Experienced'; }
+                                    else if (value == 3){ return 'Has Experienced'; }
+                                    else if (value == 4){ return 'More then 1Y Experience'; }
                                     else { return ''; }
                                 }
                             }

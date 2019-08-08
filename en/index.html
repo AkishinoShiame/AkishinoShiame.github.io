@@ -1045,10 +1045,10 @@
             var myScoreChart = new Chart(Sctx, {
                 "type":"radar",
                 "data":{
-                    "labels":["論文研討(三)", "網路安全管理", "應用多變量資料分析", "多媒體編碼壓縮"],
+                    "labels":["Thesis Seminar III", "Network Security Management", "Applied Multivariate Data Analysis", "Multimedia Compression"],
                     "datasets":[{
                         "label":"First Semester",
-                        "data":[98, 99, 74, 86],
+                        "data":[4, 4, 3, 4],
                         "fill":true,
                         "backgroundColor":"rgba(255, 51, 51, 0.2)",
                         "borderColor":"rgb(255, 51, 51)",
@@ -1070,7 +1070,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1083,10 +1092,10 @@
             var myScoreChart1 = new Chart(Sctx1, {
                 "type":"radar",
                 "data":{
-                    "labels":["論文研討(四)", "高等人工智慧", "行動與無線通訊"],
+                    "labels":["Thesis Seminar IV", "Advanced Artificial Intelligence", "Mobile and Wireless Communications"],
                     "datasets":[{
                         "label":"Second Semester",
-                        "data":[93, 92, 88],
+                        "data":[4, 4, 4],
                         "fill":true,
                         "backgroundColor":"rgba(255, 153, 51, 0.2)",
                         "borderColor":"rgb(255, 153, 51)",
@@ -1108,7 +1117,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1121,10 +1139,10 @@
             var myScoreChart2 = new Chart(Sctx2, {
                 "type":"radar",
                 "data":{
-                    "labels":["實務應用英文(一)", "論文研討(一)", "日文二(上)", "駭客攻防", "高等資料檢索", "語用學", "網路傳播專題", "學習科技專題"],
+                    "labels":["Applied English I", "Thesis Seminar I", "Japanese III", "Hacking Techniques", "Advanced Information Retrieval", "Pragmatics", "Special Topics in Network Communication", "Special Topics on Learning Technology"],
                     "datasets":[{
                         "label":"First Semester",
-                        "data":[87, 90, 83, 93, 88, 87, 95, 87],
+                        "data":[4, 4, 4, 4, 4, 4, 4, 4],
                         "fill":true,
                         "backgroundColor":"rgba(255, 255, 51, 0.2)",
                         "borderColor":"rgb(255, 255, 51)",
@@ -1146,7 +1164,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1159,10 +1186,10 @@
             var myScoreChart3 = new Chart(Sctx3, {
                 "type":"radar",
                 "data":{
-                    "labels":["技術寫作", "論文研討(二)", "日文二(下)", "專案管理", "進階資訊數學", "高等計算機網路", "研究方法", "演算法"],
+                    "labels":["Technical Writing", "Thesis Seminar II", "Japanese IV", "Project Management", "Advanced Information Mathematics", "Advanced Computer Networks", "Research Methods", "Algorithms"],
                     "datasets":[{
                         "label":"Second Semester",
-                        "data":[73, 92, 73, 88, 81, 95, 88, 84],
+                        "data":[3, 4, 3, 4, 4, 4, 4, 4],
                         "fill":true,
                         "backgroundColor":"rgba(153, 255, 51, 0.2)",
                         "borderColor":"rgb(153, 255, 51)",
@@ -1184,7 +1211,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1197,10 +1233,10 @@
             var myScoreChart4 = new Chart(Sctx4, {
                 "type":"radar",
                 "data":{
-                    "labels":["日文一(上)", "專題研究(二)", "英文進階字彙與文法", "多媒體音效製作(一)", "互動動設計專題(一)"],
+                    "labels":["Japanese I", "Research Project II", "Oral Communication I", "Multimedia Sound Effect Production I", "Interaction Design Seminar I"],
                     "datasets":[{
                         "label":"First Semester",
-                        "data":[68, 87, 72, 89, 85],
+                        "data":[2, 4, 3, 4, 4],
                         "fill":true,
                         "backgroundColor":"rgba(51, 255, 51, 0.2)",
                         "borderColor":"rgb(51, 255, 51)",
@@ -1222,7 +1258,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1235,10 +1280,10 @@
             var myScoreChart5 = new Chart(Sctx5, {
                 "type":"radar",
                 "data":{
-                    "labels":["日文一(下)", "資訊講座", "英語口語溝通技巧", "英文實用閱讀與寫作", "談判與危機處理", "海量資料檢索", "人工智慧", "手機互動程式投計", "書法藝術"],
+                    "labels":["Japanese II", "Seminar on Information Technology", "Oral Communication Il", "Practical Reading and Writing", "Negotiation and Crisis Management", "Big Data Retrieval", "Artificial Intelligence", "Interactive Mobile Phone Programming", "The Art of Calligraphy"],
                     "datasets":[{
                         "label":"Second Semester",
-                        "data":[77, 90, 79, 93, 87, 84, 86, 72, 91],
+                        "data":[3, 4, 3, 4, 4, 4, 4, 3, 4],
                         "fill":true,
                         "backgroundColor":"rgba(51, 255, 153, 0.2)",
                         "borderColor":"rgb(51, 255, 153)",
@@ -1260,7 +1305,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1273,10 +1327,10 @@
             var myScoreChart6 = new Chart(Sctx6, {
                 "type":"radar",
                 "data":{
-                    "labels":["體育(伍)", "作業系統", "機率與統計", "西方文化與英語學習(上)", "作業系統實務", "區域網路", "網路通訊程式設計", "電腦遊戲製作"],
+                    "labels":["Physical Education V", "Operating Systems", "Probability and Statistics", "Westren Culture and English Learning I", "Operating System Practices", "Local Area Networks", "Programming Design of Networking Communications", "Computer Game Production"],
                     "datasets":[{
                         "label":"First Semester",
-                        "data":[78, 68, 73, 82, 93, 76, 88, 74],
+                        "data":[3, 2, 3, 4, 4, 3, 4, 3],
                         "fill":true,
                         "backgroundColor":"rgba(51, 255, 255, 0.2)",
                         "borderColor":"rgb(51, 255, 255)",
@@ -1298,7 +1352,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1311,10 +1374,10 @@
             var myScoreChart7 = new Chart(Sctx7, {
                 "type":"radar",
                 "data":{
-                    "labels":["體育(陸)", "離散數學", "專題研究(一)", "設計概論", "西方文化與英語學習(下)", "廣域網路", "進階Maya設計", "系統安全", "介面設計特論"],
+                    "labels":["Physical Education VI", "Discrete Mathematics", "Research Project I", "Introduction to Design", "Westren Culture and English Learning II", "Wide Area Networks", "3D Animation", "Operation System Security", "Interface Design"],
                     "datasets":[{
                         "label":"Second Semester",
-                        "data":[87, 87, 89, 88, 86, 84, 76, 92, 90],
+                        "data":[4, 4, 4, 4, 4, 4, 3, 4, 4],
                         "fill":true,
                         "backgroundColor":"rgba(51, 153, 255, 0.2)",
                         "borderColor":"rgb(51, 153, 255)",
@@ -1336,7 +1399,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1349,10 +1421,10 @@
             var myScoreChart8 = new Chart(Sctx8, {
                 "type":"radar",
                 "data":{
-                    "labels":["體育(參)", "資料結構", "線性代數", "電腦網路導論", "資料結構實務", "英語口頭發表與報告", "Java程式設計", "人機介面設計", "互動設計特論", "智慧財產與社會發展", "公民與多元社會", "綠建築與環境設計"],
+                    "labels":["Physical Education III", "Data Structures", "Linear Algebra", "Introduction to Computer Networks", "Data Structure Programming Practice", "Oral Report", "Java Programming", "Human Machine Design", "Interaction Design", "Intellectual Property and social development", "Citizenship and Multicultural Society", "Green Architecture and Environmental Design"],
                     "datasets":[{
                         "label":"First Semester",
-                        "data":[74, 77, 90, 80, 87, 84, 77, 85, 87, 99, 70, 91],
+                        "data":[3, 3, 4, 4, 4, 4, 3, 4, 4, 4, 3, 4],
                         "fill":true,
                         "backgroundColor":"rgba(51, 51, 255, 0.2)",
                         "borderColor":"rgb(51, 51, 255)",
@@ -1374,7 +1446,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1387,10 +1468,10 @@
             var myScoreChart9 = new Chart(Sctx9, {
                 "type":"radar",
                 "data":{
-                    "labels":["體育(肆)", "電腦圖學", "資料庫管理系統", "進階程式設計", "3D設計與實務", "多媒體通訊概論", "多媒體音效製作", "資訊安全導論 ", "華人歷史與文化", "邏輯與批判思考", "台灣開發與轉型"],
+                    "labels":["Physical Education IV", "Computer Graphics", "Database Management Systems", "Advanced Programming", "Introduction to 3D Modeling", "Introduction to Multimedia Communications", "Multimedia Sound Effect Production", "Introduction to Information Security", "Chinese History and Culture", "Logic and Critical Thinking", "Taiwan Development and Transformation"],
                     "datasets":[{
                         "label":"Second Semester",
-                        "data":[76, 75, 84, 90, 87, 77, 80, 85, 79, 73, 86],
+                        "data":[3, 3, 4, 4, 4, 3, 4, 4, 3, 3, 4],
                         "fill":true,
                         "backgroundColor":"rgba(153, 51, 255, 0.2)",
                         "borderColor":"rgb(153, 51, 255)",
@@ -1412,7 +1493,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1425,10 +1515,10 @@
             var myScoreChart10 = new Chart(Sctx10, {
                 type:"radar",
                 data:{
-                    "labels":["中國文學鑑賞與創作","體育(壹)","應用英文（一）","計算機概論","多媒體導論","程式設計（一）","傳播概論","微積分","資訊應用（一）"],
+                    "labels":["Chinese Literature: Appreciation and Creative Writing", "Physical Education I", "Practical English I", "Introduction to Computer Science", "Introduction to Multimedia", "Programming Design I", "Introduction to Communication", "Calculus", "Information Applications I"],
                     "datasets":[{
                         label:"First Semester",
-                        data:[71,85,75,93,80,87,79,73,100],
+                        data:[3, 4, 3, 4, 4, 4, 3, 3, 4],
                         fill:true,
                         backgroundColor:"rgba(255, 51, 255, 0.2)",
                         borderColor:"rgb(255, 51, 255)",
@@ -1450,7 +1540,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {
@@ -1463,10 +1562,10 @@
             var myScoreChart11 = new Chart(Sctx11, {
                 "type":"radar",
                 "data":{
-                    "labels":["中國文學鑑賞與創作","體育(貳)","應用英文（二）","程式設計（二）","資訊概論","數位學習概論","數位系統導論","數位系統導論實驗","微積分","資訊應用（二）","職場英文"],
+                    "labels":["Chinese Literature: Appreciation and Creative Writing", "Physical Education II", "Practical English II", "Programming Design II", "Introduction to Information Technology", "Introduction to Digital Learning", "Introduction to Digital Systems", "Digital Systems Lab", "Calculus", "Information Applications II", "Workplace English"],
                     "datasets":[{
                         "label":"Second Semester",
-                        "data":[74, 74, 70, 89, 85, 93, 83, 87, 91, 94, 100],
+                        "data":[3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4],
                         "fill":true,
                         "backgroundColor":"rgba(255, 51, 153, 0.2)",
                         "borderColor":"rgb(255, 51, 153)",
@@ -1488,7 +1587,16 @@
                         },
                         ticks: {
                             beginAtZero: true,
-                            stepSize: 25
+                            min: 0,
+                            max: 4,
+                            stepSize: 1,
+                            callback: function(value, index, values) {
+                                if (value == 1){ return 'D'; }
+                                else if (value == 2){ return 'C'; }
+                                else if (value == 3){ return 'B'; }
+                                else if (value == 4){ return 'A'; }
+                                else { return 'E'; }
+                            }
                         }
                     },
                     legend: {

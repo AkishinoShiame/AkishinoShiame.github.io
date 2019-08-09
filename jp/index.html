@@ -105,6 +105,14 @@
                 max-height: 97vh !important;
                 overflow: auto;
             }
+
+            .snap-scroll-oya{
+                scroll-snap-type: y mandatory;
+            }
+
+            .snap-scroll-kodomo{
+                scroll-snap-align: start;
+            }
             
             ::-webkit-scrollbar {
                 width: 7px;  /* remove scrollbar space */
@@ -162,8 +170,8 @@
                     <br><br>
                     <div class="container-fluid">
                         <!-- left down content shows below -->
-                        <div data-spy="scroll" data-target="#navbar-main-control" data-offset="150" class="scrollspy-custom bg-force-dark">
-                            <div class="col"> <!-- ScrollSpy Sec0 no tag start (ﾟ∀ﾟ) -->
+                        <div data-spy="scroll" data-target="#navbar-main-control" data-offset="150" class="scrollspy-custom bg-force-dark snap-scroll-oya">
+                            <div class="col snap-scroll-kodomo"> <!-- ScrollSpy Sec0 no tag start (ﾟ∀ﾟ) -->
                                 <h2>== 彼の取扱説明書 ==</h2> <!-- Below starts of the right-left slide -->
                                 <div id="carouse0Sect1Indicators" class="carousel slide adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -377,7 +385,7 @@
                                     </div>
                                 </div> <!-- Above Ends of the right-left slide -->
                             </div> <!-- ScrollPhy Sec0 no tag end (ﾟ∀ﾟ) -->
-                            <div id="SectionA" class="col">
+                            <div id="SectionA" class="col snap-scroll-kodomo">
                                 <h2>学習パス</h2>
                                 <div id="carouselSect1Indicators" class="carousel slide carousel-fade adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -536,7 +544,7 @@
                                     </div>
                                 </div> <!-- Above Ends of the right-left slide -->
                             </div> <!-- ScrollSpy Section A-->
-                            <div id="SectionB" class="col">
+                            <div id="SectionB" class="col snap-scroll-kodomo">
                                 <h2>テクニカル経験</h2>
                                 <div id="carouselSect2Indicators" class="carousel slide carousel-fade adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -680,7 +688,7 @@
                                     </div>
                                 </div> <!-- Above Ends of the right-left slide -->
                             </div> <!-- ScrollSpy Section B-->
-                            <div id="SectionC" class="col">
+                            <div id="SectionC" class="col snap-scroll-kodomo">
                                 <h2>アプローチとライフイベント</h2>
                                 <div id="carouselSect3Indicators" class="carousel slide carousel-fade adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">

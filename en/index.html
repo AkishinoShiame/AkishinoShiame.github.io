@@ -94,6 +94,14 @@
                 overflow: auto;
             }
 
+            .snap-scroll-oya{
+                scroll-snap-type: y mandatory;
+            }
+
+            .snap-scroll-kodomo{
+                scroll-snap-align: start;
+            }
+
             ::-webkit-scrollbar {
                 width: 7px;  /* remove scrollbar space */
                 background: transparent;  /* optional: just make scrollbar invisible */
@@ -150,8 +158,8 @@
                     <br><br>
                     <div class="container-fluid">
                         <!-- left down content shows below -->
-                        <div data-spy="scroll" data-target="#navbar-main-control" data-offset="150" class="scrollspy-custom bg-force-dark">
-                            <div class="col">  <!-- ScrollSpy Sec0 no tag start (ﾟ∀ﾟ) -->
+                        <div data-spy="scroll" data-target="#navbar-main-control" data-offset="150" class="scrollspy-custom bg-force-dark snap-scroll-oya">
+                            <div class="col snap-scroll-kodomo">  <!-- ScrollSpy Sec0 no tag start (ﾟ∀ﾟ) -->
                                 <h2>== The user guide of this guy ==</h2>
                                 <div id="carouse0Sect1Indicators" class="carousel slide adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -396,7 +404,7 @@
                                     </div>
                                 </div> <!-- Above Ends of the right-left slide -->
                             </div>  <!-- ScrollSpy Sec0 no tag ends (ﾟ∀ﾟ) -->
-                            <div id="SectionA" class="col">
+                            <div id="SectionA" class="col snap-scroll-kodomo">
                                 <h2>Learning Path</h2>
                                 <div id="carouselSect1Indicators" class="carousel slide carousel-fade adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -555,7 +563,7 @@
                                     </div>
                                 </div> <!-- Above Ends of the right-left slide -->
                             </div> <!-- ScrollSpy Section A-->
-                            <div id="SectionB" class="col">
+                            <div id="SectionB" class="col snap-scroll-kodomo">
                                 <h2>Experiences</h2>
                                 <div id="carouselSect2Indicators" class="carousel slide carousel-fade adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -699,7 +707,7 @@
                                     </div>
                                 </div> <!-- Above Ends of the right-left slide -->
                             </div> <!-- ScrollSpy Section B-->
-                            <div id="SectionC" class="col">
+                            <div id="SectionC" class="col snap-scroll-kodomo">
                                 <h2>Approach & Life Event</h2>
                                 <div id="carouselSect3Indicators" class="carousel slide carousel-fade adjuset-hight" data-ride="carousel">
                                     <ol class="carousel-indicators">

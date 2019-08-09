@@ -75,6 +75,10 @@
                 scrollbar-width: none !important; /* Firefox*/
             }
 
+            .Sec0Third::-webkit-scrollbar { 
+                display: none !important; /* Safari and Chrome */
+            }
+
             .hvh-32{
                 height: 32vh !important ;
                 max-height: 32vh !important ;
@@ -122,10 +126,15 @@
             }
 
             /* optional: show position indicator in red */
-            ::-webkit-scrollbar-thumb {
+            .scrollspy-custom::-webkit-scrollbar-thumb {
                 background: #e83e8cAB !important;
                 border-radius: 5px;
-            }        
+            }
+            
+            .side-bar-custom::-webkit-scrollbar-thumb {
+                background: #e83e8cAB !important;
+                border-radius: 5px;
+            }
         </style>
     </head>
     

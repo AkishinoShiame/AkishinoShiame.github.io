@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../../../../flags/favicon-terminal.ico" sizes="16x16">
+        <link rel="stylesheet" href="../../../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../../../css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../../../../css/bootstrap-enable_new.css">
+        <link rel="stylesheet" href="../../../../css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../css/bootstrap-social.css">
+        <link rel="stylesheet" href="../../../../css/flag-icon.css">
+        <title>作品集</title>
+        <style type="text/css">
+            @font-face {
+                font-family: TitleTC;
+                src: url(../../../../fonts/Title-TC.otf) format("opentype");
+            }
+            body { 
+                background: url("../../../../content/BG4CV.jpg") no-repeat center center fixed !important; 
+                background-size: cover !important; 
+                font-family: TitleTC !important;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br>
+        <div class="container">
+            <!-- 壹-0 -->
+            <div class="row">
+                <div class="col text-left"><h1>作品集</h1></div>
+            </div>
+            <br>
+            <h3 class="border-bottom border-dark">動態節能省電的雲端系統研究</h3>
+            <div class="row">
+                <p>
+                    <ul>
+                        <li>架構: 基於Hadoop建置四台機器的小型雲端</li>
+                        <li>主控節點(NameNode): 四核心 CPU 電腦</li>
+                        <li>運算節點(DataNode): 四核心 CPU、二核心 CPU 與單核心 CPU 電腦</li>
+                        <li>介紹:</li>
+                        <p>
+                            為了避免企業因每年汰換仍然可用的電腦的浪費，本研究提供了對應的配套方案。<br>
+                            使用了三種不同硬體設備之電腦當作 DataNode(運算節點) 以模擬個公司不同時期的舊電腦建立出的雲端架構。<br>
+                            本研究應用同時考量到節能省電的問題，設計了一個自動控制節點開關的架構。<br>
+                            此自動控制可以即時偵測不同DataNode(運算節點)的CPU與記憶體使用率來決定個別DataNode(運算節點)是否需開機進行運算，同時讓不需使用到之節點進行休眠(關閉電源但並未完全關閉系統)而非關機達到更低的能源損耗。<br>
+                        </p>
+                        <li>撰寫語言: PHP/HTML(網頁控制介面), 系統腳本 (Ubuntu 系統), Java(Hadoop)</li>
+                    </ul>
+                    <br>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            完整演示
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fMZLlxU4f6Y" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    &nbsp;<br>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            低負載
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g9WdDoIiKCY" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    &nbsp;<br>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            高負載
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FQM3NnkwjBw" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    &nbsp;<br>
+                    <p>
+                        <ul>
+                            <li>Github源：<a href="https://github.com/AkishinoShiame/Daigaku-Kennkyu" target="_blank" class="text-body">github.com/AkishinoShiame/Daigaku-Kennkyu</a></li>
+                            <li>Hadoop設定檔：<a href="https://github.com/AkishinoShiame/Daigaku-Kennkyu/releases/tag/v1.1" target="_blank" class="text-body">github.com/AkishinoShiame/Daigaku-Kennkyu/releases/tag/v1.1</a></li>
+                            <li>原網頁截圖：</li>
+                        </ul>
+                        <div class="card w-100">
+                            <div class="card-header">
+                                電腦
+                            </div>
+                            <img class="card-img" src="https://sites.google.com/site/kurieitanoyume/_/rsrc/1484210712746/yan-jiu/hadoop/USER-PC.jpg">
+                        </div>
+                        <div class="card">
+                            <div class="card-header" style="width: 24rem;">
+                                平板
+                            </div>
+                            <img class="card-img" src="https://sites.google.com/site/kurieitanoyume/_/rsrc/1484210712746/yan-jiu/hadoop/USER-PAD.jpg?height=320&width=240">
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="card">
+                            <div class="card-header" style="width: 17.9rem;">
+                                手機
+                            </div>
+                            <img class="card-img" src="https://sites.google.com/site/kurieitanoyume/_/rsrc/1484210712746/yan-jiu/hadoop/USER-PHONE.jpg?height=200&width=112">
+                        </div>
+                    </p>
+                </p>
+            </div>
+            <br>
+            <!-- 壹-1 -->
+            <h3 class="border-bottom border-dark">支援 IPv6路由器/分享器軟硬體資料庫案</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>為了提供使用者一個更便利的可支援IPv6的硬體設備/韌體所開發的系統。</li>
+                        <li>為一個client-server架構之設計。並提供了RWD與人性化之使用者介面</li>
+                        <li>此系統包含了超過了10個的硬體製造商中接近10,000多筆的硬體/韌體資料</li>
+                        <li>網頁使用MySQL資料庫和使用PHP/HTML等語言進行撰寫。</li>
+                        <li>最終上線應用了Vmware ESXi與Linux Ubuntu作為伺服器的環境。</li>
+                        <li>相關GitHub資訊：<a href="https://github.com/AkishinoShiame/IPv6-Conclude_final" class="text-body" target="_blank">github.com/AkishinoShiame/IPv6-Conclude_final</a></li>
+                        <li>個人完成部分如下：</li>
+                        <ul>
+                            <li>搜尋資料與建立mySQL資料庫。</li>
+                            <li>協助網站介面設計。</li>
+                            <li>協助撰寫與建置網站。</li>
+                            <li>安裝與建制伺服器。</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-2 -->
+            <h3 class="border-bottom border-dark">政府IPv6設備升級輔導課程教學</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>教授思科路由器/交換機IPv6相關設定。</li>
+                        <li>教授IPv6環境下的防火牆/入侵防禦系統設備設定。</li>
+                        <li>提供IPv6環境下的配套方案與問題解決。</li>
+                        <li>提供IPv6環境下的網路拓墣架構與問題解決。</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-3 -->
+            <h3 class="border-bottom border-dark">以深度網路建構自然語言處理模型</h3>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        架構：Server-Client架構，包含具深度學習功能之伺服器，配合使用端的APP程式。<br>
+                        伺服器：使用Python所撰寫的線上API服務，硬體環境使用i7-4790 (3.6 GHz)、16GB記憶體與一張Nvidia 1050Ti 4G DDR5顯示卡進行運算。<br>
+                    </p>
+                    <ul>
+                        <li>伺服器端使用Python撰寫網頁程式串接後台而成，前端手機APP程式使用Unity 5.6.2f1與C#撰寫。</li>
+                        <li>為一個高齡者的陪伴虛擬助理應用，包含組合了多種深度網路撰寫而成。</li>
+                        <li>此系統使用了包含深度捲機神經網路(DCNN)進行情感辨識跟遞迴型神經網路(RNN)進行機器應答所組成之系統應用。</li>
+                        <li>使用了GoogLeNet並成功將情緒對話之聲紋圖訓練至97.5%的準確度。</li>
+                        <li>使用sequence to sequence規則之神經網路(RNN-LSTM)配合Word2Vec進行中文聊天之訓練。</li>
+                        <li>GitHub源相關資訊：<a href="https://github.com/AkishinoShiame/Graduated-Project" class="text-body" target="_blank">github.com/AkishinoShiame/Graduated-Project</a></li>
+                    </ul>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            實際展示影片
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/wqTBv9_8EjE?list=PLNoLOyegdJ1OuZqARxGpo_CjC8xV0JhIX&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-4 -->
+            <h3 class="border-bottom border-dark">基於深度卷機網路之高齡者陪伴虛擬助理應用</h3>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        架構：Server-Client架構，包含具深度學習功能之伺服器，配合使用端的APP程式。<br>
+                        伺服器：使用Python所撰寫的線上API服務，硬體環境使用i7-4790 (3.6 GHz)、16GB記憶體與一張Nvidia 1050Ti 4G DDR5顯示卡進行運算。<br>
+                        用戶端：智慧型手機APP，使用安裝了iOS 11的iPhone SE。<br>
+                    </p>
+                    <ul>
+                        <li>伺服器端使用Python撰寫網頁程式串接後台而成，前端手機APP程式使用Unity 5.6.2f1與C#撰寫。</li>
+                        <li>伺服器在接收到使用者的問答後，將聲音轉換為聲紋圖並判斷出使用者的感情。此感情資訊也會影像到聊天機器人的應答。</li>
+                        <li>應用之目的為陪伴年長者，並讓手機APP中的虛擬人像同時做一些正向的動作，讓使用者感到開朗並不覺孤單。</li>
+                        <li>此應用測試了GoogLeNet與AlexNet在同一批訓練資料的訓練後，所得到的情感辨識效果與準確度。</li>
+                        <li>相關投稿文章資訊：<a href="http://dl.acm.org/citation.cfm?id=3083220" class="text-body" target="_blank">Lee, M. C., Yeh, S. C., <b><u>Chiu, S. Y.</u></b>, & Chang, J. W. (2017, June). A Deep Convolutional Neural Network Based Virtual Elderly Companion Agent. In Proceedings of the 8th ACM on Multimedia Systems Conference (pp. 235-238). ACM.</a></li>
+                    </ul>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            展示影片
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/gIptSoauB7A?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-5 -->
+            <h3 class="border-bottom border-dark">基於深度卷機網路之中文菜單辨識APP應用</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>使用Java與Android Studio建置用戶端APP程式。伺服器由Python撰寫而成。</li>
+                        <li>此應用利用深度神經網路進行學習與辨識中文菜單</li>
+                        <li>特色為建構了一客製化的深度神經網路，包含了三層的捲機神經網路(CNN)層，兩層的Max-Pooling層與一個全連結層(full-connected layer)之構造。</li>
+                        <li>即使遇到了複雜的圖像資訊，仍能達到82%的準確率。其中的複雜資訊包含，具備雜訊的圖像，經過縮放、旋轉之圖像與肉眼辨識感受到不完全的圖像。</li>
+                        <li>相關投稿文章資訊：<a href="http://dl.acm.org/citation.cfm?id=3083220" class="text-body" target="_blank">Lee, M. C., <b><u>Chiu, S. Y.</u></b>, & Chang, J. W. (2017). A Deep Convolutional Neural Network based Chinese Menu Recognition App. Information Processing Letters, 128, 14-20.</a></li>
+                        <li>關於訓練資料之GitHub源：<a href="https://github.com/AkishinoShiame/Chinese-Menu-Recognition-App-Dataset" class="text-body" target="_blank">github.com/AkishinoShiame/Chinese-Menu-Recognition-App-Dataset</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-6 -->
+            <h3 class="border-bottom border-dark">AI-Kernel 專案</h3>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        架構：Server-Client架構，包含具深度學習功能之伺服器，配合使用端的APP程式。<br>
+                        伺服器：使用Python所撰寫的線上API服務，硬體環境使用i7-9700K (4.90 GHz)、32GB記憶體、M.2 SSD 500GB、2TB的傳統硬碟一顆與一張NVidia GEFORCE RTX 2080 8 GB GDDR6顯示卡進行運算。<br>
+                        用戶端：智慧型手機APP，使用安裝了iOS 12的iPhone XR。<br>
+                    </p>
+                    <ul>
+                        <li>此專案為台灣某知名企業購買了我個人研究所撰寫之應用的使用權與再開發權。</li>
+                        <li>此應用是基於研究所時期所開發的應用為基礎與藍本，重新針對近期較新的硬體設備與相關API進行建置。</li>
+                        <li>為一個高齡者的陪伴虛擬助理應用，系統使用了包含深度捲機神經網路(DCNN)進行情感辨識跟遞迴型神經網路(RNN)進行機器應答所組成之系統應用。</li>
+                        <li>Python所開發之伺服端可達到97.5%的感情認識正確率。為使用NVidia DIGITS、DeepQA與FastText等等各式技術所組合而成的系統型應用。</li>
+                        <li>原感情可進行的分類為正面、負面與普通三種類型，而聊天機器人會針對對話的輸入與情感做出正向的回話判斷。</li>
+                        <li>使用Unity 5.6.3p1與C#進行改良與編譯，讓使用者端可支援到更新的版本。</li>
+                        <li>使用Xcode針對硬體為iPhone XR、作業系統為iOS 12的手機完成測試。</li>
+                        <li>為了使原始的相關主要程式可以更加便利與使用，將相關程式包裝成Linux的系統服務並隨開機時啟動。</li>
+                        <li>根據需要完成了中文、英文與日文三種語言的使用與再開發手冊之撰寫。</li>
+                        <li>GitHub源相關資訊：<a href="https://github.com/AkishinoShiame/AI-Kernel" class="text-body" target="_blank">github.com/AkishinoShiame/AI-Kernel</a></li>
+                    </ul>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            展示影片
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/OdDjb4pAgkU?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-7 -->
+            <h3 class="border-bottom border-dark">AkishinoShiame.github.io 自我介紹網頁專案</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>為了自我訓練與完成興趣之專案，主要是針對我個人的各個方面做詳細的展現與介紹。</li>
+                        <li>網站整體希望由我個人一手打造，從整體設計到所有內容的擺放。少部分使用非商業用途許可之素材。</li>
+                        <li>為了在網頁與前端開發上自我學習，嘗試了多種不同的tool進行組合與開發建置。</li>
+                        <li>目前此專案使用了Bootstrap、FontAwsome與Chart.js等OpenSource的開源性軟體，未來可能不僅止於這些。</li>
+                        <li>此專案可讓自身之GitHub、Git與GitPage等相關使用經驗能延長與持續。</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-8 -->
+            <h3 class="border-bottom border-dark">夢風車的希望男孩</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>使用Adobe Flash CS5/CS6軟體並配合ActionScript3開發出的互動展示遊戲</li>
+                        <li>曾於學校內的展覽進行發表與建置，且所有的控制皆使用麥克風（使用風車玩具偽裝）。</li>
+                        <li>本專案是與設計系學生一同組隊，並完成整體建置。</li>
+                        <li>個人為主計畫者，並與其他成員一起討論並設計出最終的提案與基礎故事。</li>
+                        <li>本遊戲的背景音樂選擇與所有的程式開發皆為我自行一人完成，而設計系成員提供所有的圖形素材。</li>
+                    </ul>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            Demo影片
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/w99RTKJaAAs?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&fs=0&controls=0" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <h5>遊戲資訊</h5>
+                    <!-- flash game tag-->
+                    <div class="col">
+                        <div class="rol">
+                            <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="version-2-0-list" data-toggle="list" href="#version-2-0" role="tab" aria-controls="version-2-0">夢の子v2.0release</a>
+                            <a class="list-group-item list-group-item-action" id="version-1-0-list" data-toggle="list" href="#version-1-0" role="tab" aria-controls="version-1-0">夢の子v1.0</a>
+                            <a class="list-group-item list-group-item-action" id="version-0-9-list" data-toggle="list" href="#version-0-9" role="tab" aria-controls="version-0-9">夢の子v0.9beta</a>
+                            </div>
+                        </div>
+                        <div class="rol bg-light">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="version-2-0" role="tabpanel" aria-labelledby="version-2-0-list">
+                                    <div class="col-11">
+                                        v2 <a href="https://akishinoshiame.github.io/content/夢の子final_v2.0.swf">檔案載點</a><br>
+                                        版本異動:<br>
+                                        <ul>
+                                            <li>增加至三個關卡並加強腳色於加分與扣分時的反應</li>
+                                            <li>正式版第二版，同時為展覽時使用之版本。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="version-1-0" role="tabpanel" aria-labelledby="version-1-0-list">
+                                    <div class="col-11">
+                                        v1 <a href="https://akishinoshiame.github.io/content/夢の子final_v1.0.swf">檔案載點</a><br>
+                                        版本異動:<br>
+                                        <ul>
+                                            <li>第一版正式版。</li>
+                                            <li>相對於測試版增加遊戲說明</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="version-0-9" role="tabpanel" aria-labelledby="version-0-9-list">
+                                    <div class="col-11">
+                                        v0.9b <a href="https://akishinoshiame.github.io/content/夢の子final_v0.9b.swf">檔案載點</a><br>
+                                        版本異動:<br>
+                                        <ul>
+                                            <li>最初製作的測試版，測試正常。</li>
+                                            <li>單一關卡，只含通過與失敗。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <h5>遊戲說明:</h5><br>
+                        <ul>
+                            <li>全程請啟用麥克風，若發現操作不順請檢查您的麥克風增量是否有再12db或以上</li>
+                            <li>建議於光亮的場所進行本遊戲</li>
+                            <li>男孩可用mic控制其上下移動</li>
+                            <li>遊戲中間，所有水果皆是加分項目(+10)，另外兩隻(鯊魚、章魚)為扣分項目(-5)</li>
+                            <ul>
+                                <li>小於零分(負分)表示你太爛拉！所以強制你結束遊戲~ >_P</li>
+                                <li>基本得分需取得250分(含)以上即可過關</li>
+                                <li>要是你太猛了，遊玩期間(秒數倒數結束前)集滿了400+分數，遊戲將會提早結束。</li>
+                            </ul>
+                            <li>不管GoodEnd或是BadEnd皆會有30秒的等待時間，才會自動回到起始畫面，讓您進行下一輪遊戲。</li>
+                            <li>請帶著樂觀開心的心情愉悅遊玩。</li>
+                        </ul>
+                        <div class="col-11">
+                            §※　　　　　　　本遊戲為非商業用途之版權所有　　　　　　　※§ <br>
+                            §※　音樂為網路平台所取得，所有權力將歸屬於該著作與創作者　※§ <br>
+                            §※　　　若需相關背景音樂之清單，將擇日公告在本頁後方　　　※§ <br>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <!-- 壹-Backup -->
+            <h3 class="border-bottom border-dark">以興趣為前提琢磨之專案</h3>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>世界はこれから繋がっている</li>
+                        <ul>
+                            <li>受閱讀部分日文原文小說與遊玩相關著作等等而啟發。</li>
+                            <li>主要為自我日文訓練之興趣專案。</li>
+                            <li>考慮從故事撰寫至遊戲開發皆由一人完成。</li>
+                            <li>目前已有部分的故事撰寫進度。</li>
+                            <li>為完成並實現長久以來以概念之文字向遊戲的夢想。</li>
+                            <li>將考慮採用Ren'Py與Live2D技術。</li>
+                            <li>將以開源形式持續進行。</li>
+                            <li>Github源：<a href="https://github.com/AkishinoShiame/Sekai-Tuna" class="text-body" target="_blank">github.com/AkishinoShiame/Sekai-Tuna</a></li>
+                        </ul>
+                        <li>プロジェクト・桜</li>
+                        <ul>
+                            <li>此專案打算製作可控制個性與理解情感之聊天對話機器人。</li>
+                            <li>受多個不同的原因影響而有了開發之企圖心，包含但不限於研究所之成品、日本微軟りんな、日本相關二次創作等。</li>
+                            <li>目前考慮使用廣大的日本動畫著作作為訓練資料。</li>
+                            <li>暫考量以開源與非商業形式開發與使用。</li>
+                            <li>自我學習並思索最終可行之深度學習網路模型，用以套用在此專案上。</li>
+                            <li>Github源：<a href="https://github.com/AkishinoShiame/Project-Sakura" class="text-body" target="_blank">github.com/AkishinoShiame/Project-Sakura</a></li>
+                        </ul>
+                        <li>曾接觸過實況與影片剪輯之經驗。</li>
+                    </ul>
+                </div>
+            </div>
+            <br><br>
+            <!-- Footer -->
+            <footer class="footer text-center"><i class="fa fa-copyright"></i>2019 AkishinoShiame</footer>
+            <br>
+        </div>
+        <script src="../../../../js/jquery-3.3.1.min.js"></script>
+        <script src="../../../../js/bootstrap.js"></script>
+        <script src="../../../../js/bootstrap.bundle.js"></script>
+    </body>
+</html>

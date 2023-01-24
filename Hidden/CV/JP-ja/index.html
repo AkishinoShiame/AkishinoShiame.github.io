@@ -45,7 +45,7 @@
             <br><br><br>
             <div class="row">
                 <div class="col-5 text-left"><h1>履歴書</h1></div>
-                <div class="col-4 text-right"><br><h5>令和 5 年 1 月 15 日</h5></div>
+                <div class="col-4 text-right"><br><h5>令和 5 年 1 月 24 日</h5></div>
                 <div class="col-3 text-center"><br></div>
             </div>
             <div class="row">
@@ -64,8 +64,14 @@
                     <div class="row">
                         <div class="col">生年月日</div>
                         <div class="col text-left">平成 5 年 3 月 30 日生</div>
-                        <div class="col text-left">(満 26 歳)</div>
+                        <div class="col text-left">(満 <div id="nenrei"></div> 歳)</div>
                     </div>
+                    <script>
+                        (function (){
+                            const DateToday = new Date();
+                            document.getElementById("nenrei").innerHTML = toString(DateToday.getUTCFullYear() - 1993)
+                        })();
+                    </script>
                     <div class="row"><div class="col"><br></div></div>
                 </div>
                 <div class="col-3 text-center"><img src="../../../content/self_formal.png" class="rounded logo-img"></div>
